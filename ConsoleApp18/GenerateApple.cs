@@ -18,6 +18,16 @@ namespace ConsoleApp18
             apple[0] = apple[0] * 10;
             apple[1] = apple[1] * 10;
             graphics.FillEllipse(System.Drawing.Brushes.Green, apple[0], apple[1], 10, 10);
+
+
+        }
+        private static void GenerateKringeApple() 
+        {
+            for (int j = 0; j < 2; j++)
+                kringe_apple[j] = random.Next(0, 40);
+            kringe_apple[0] = kringe_apple[0] * 10;
+            kringe_apple[1] = kringe_apple[1] * 10;
+            graphics.FillEllipse(System.Drawing.Brushes.Red, kringe_apple[0], kringe_apple[1], 10, 10);
         }
 
     }

@@ -12,7 +12,7 @@ namespace ConsoleApp18
         {
             // увеличить gameScore на 1
             gameScore++;
-
+            Console.Title="Score "+ gameScore;
         }
     }
 }

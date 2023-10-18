@@ -14,5 +14,13 @@ namespace ConsoleApp18
             int[] last = { snake.Last()[0], snake.Last()[1] };
             snake.Add(last);
         }
+        private static void DecreaseSnake() 
+        {
+            if (snake.Count > 1)
+            {
+                snake.RemoveAt(snake.Count - 1);
+            }
+            else GameOver();
+        }
     }
 }
